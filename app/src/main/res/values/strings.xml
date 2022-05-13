@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Lucky 9</string>
+
+    <string name="mnuRestartText">Restart</string>
+    <string name="mnuNewGameText">New Game</string>
+    <string name="mnuHomeText">Home</string>
+    <string name="leaderboardText">Leaderboard</string>
+    <string name="playerNameText">New Player</string>
+    <string name="howToPlayText">How to Play</string>
+
+    <string name="dealerCard1">Dealer Card 1</string>
+    <string name="dealerCard2">Dealer Card 2</string>
+    <string name="dealerCard3">Dealer Card 3</string>
+    <string name="playerCard1">Player Card 1</string>
+    <string name="playerCard2">Player Card 2</string>
+    <string name="playerCard3">Player Card 3</string>
+    <string name="splashScreen">Splash Screen Image</string>
+    <string name="logo">Lucky9 Logo</string>
+
+    <string name="instructions">
+        To start a round, choose an amount and place a bet. \n
+        At the start of each round, two cards are dealt to the player face up. \n
+        Two cards will also be dealt to the dealer: one card facing up, the other face down. \n
+        If no one scores a Lucky 9, the player can choose to &quot;Hit&quot; to get another card or simply &quot;Stand.&quot;\n
+        The player wins if his hand total is closer to 9 than the dealer&quot;s hand total.\n
+        Tip: Only players who cash out will be added to the leaderboard.\n
+    </string>
+
+    <string name="title_activity_splash">SplashActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+
+</resources>

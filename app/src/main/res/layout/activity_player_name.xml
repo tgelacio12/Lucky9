@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="25dp">
+
+    <TextView
+        android:id="@+id/lblPlayerName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:padding="10dip"
+        android:fontFamily="@font/convergence"
+        android:text="Enter your name:"
+        android:textAlignment="center"
+        android:textColor="#32786E"
+        android:textSize="23sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/txtPlayerName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:textAlignment="center"
+        android:maxLength="12"/>
+
+    <TextView
+        android:id="@+id/lblPlayerNameError"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dip"
+        android:text="Test"
+        android:textAlignment="center"
+        android:textSize="17sp"
+        android:textStyle="italic"
+        android:textColor="@android:color/holo_red_dark"/>
+
+    <Button
+        android:id="@+id/btnStartGame"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_margin="5dp"
+        android:padding="10dp"
+        android:background="@drawable/button_shape_home"
+        android:text="Start Game"
+        android:textColor="#FFFFFF"
+        android:textSize="15sp" />
+
+</LinearLayout>

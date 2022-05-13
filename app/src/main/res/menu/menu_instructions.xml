@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/mnuHome"
+        android:icon="@drawable/ic_home"
+        android:title="@string/mnuHomeText"
+        app:showAsAction="ifRoom" />
+
+    <item android:id="@+id/mnuStartGame"
+        android:title="@string/mnuNewGameText"
+        app:showAsAction="never" />
+
+    <item android:id="@+id/mnuLeaderboard"
+        android:title="@string/leaderboardText"
+        app:showAsAction="never" />
+
+</menu>

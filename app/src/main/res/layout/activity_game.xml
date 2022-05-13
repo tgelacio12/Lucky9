@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- In-game info -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/lblRound"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="10"
+            android:padding="5dp"
+            android:fontFamily="@font/convergence"
+            android:text="Round: "
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/txtRound"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="10"
+            android:padding="5dp"
+            android:fontFamily="@font/convergence"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/txtPlayerName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="60"
+            android:textAlignment="center"
+            android:padding="5dp"
+            android:fontFamily="@font/convergence"
+            android:textSize="22sp"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/lblPlayerMoney"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="10"
+            android:padding="5dp"
+            android:fontFamily="@font/convergence"
+            android:text="Money: "
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/txtPlayerMoney"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="10"
+            android:padding="5dp"
+            android:fontFamily="@font/convergence"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <!-- Dealer Side -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:background="@drawable/border"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_margin="5dp"
+        android:padding="5dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="5dp">
+
+            <TextView
+                android:id="@+id/txtDealerHand"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/convergence"
+                android:textSize="18sp"
+                android:textColor="#32786E"
+                android:text="Dealer's Hand"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="5dp">
+
+            <ImageView
+                android:id="@+id/imgDealerCard1"
+                android:layout_width="100dp"
+                android:layout_height="125dp"
+                android:contentDescription="@string/dealerCard1"
+                android:src="@drawable/back"/>
+
+            <ImageView
+                android:id="@+id/imgDealerCard2"
+                android:layout_width="100dp"
+                android:layout_height="125dp"
+                android:contentDescription="@string/dealerCard2"
+                android:src="@drawable/back"/>
+
+            <ImageView
+                android:id="@+id/imgDealerCard3"
+                android:layout_width="100dp"
+                android:layout_height="125dp"
+                android:contentDescription="@string/dealerCard3"
+                android:src="@drawable/back"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- Result Display -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/lblResult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/convergence"
+            android:textColor="#32786E"
+            android:textSize="23sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <!-- Player Side -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:background="@drawable/border"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_margin="5dp"
+        android:padding="5dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="5dp">
+
+        <ImageView
+            android:id="@+id/imgPlayerCard1"
+            android:layout_width="100dp"
+            android:layout_height="125dp"
+            android:contentDescription="@string/playerCard1"
+            android:src="@drawable/back"/>
+
+        <ImageView
+            android:id="@+id/imgPlayerCard2"
+            android:layout_width="100dp"
+            android:layout_height="125dp"
+            android:contentDescription="@string/playerCard2"
+            android:src="@drawable/back"/>
+
+        <ImageView
+            android:id="@+id/imgPlayerCard3"
+            android:layout_width="100dp"
+            android:layout_height="125dp"
+            android:contentDescription="@string/playerCard3"
+            android:src="@drawable/back"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="5dp">
+
+            <TextView
+                android:id="@+id/txtPlayerHand"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/convergence"
+                android:textSize="18sp"
+                android:textColor="#32786E"
+                android:text="Player's Hand"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+    <!-- Bet -->
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="5dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/lblBet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/convergence"
+                android:text="Bet ($):"
+                android:textColor="#32786E"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/spnBet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:padding="10dip"
+                android:textAlignment="center"
+                android:textSize="23sp"
+                android:textColor="#000000" />
+
+            <Button
+                android:id="@+id/btnBet"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:padding="8dp"
+                android:background="@drawable/button_shape_bet"
+                android:textColor="#FFFFFF"
+                android:textSize="15sp"
+                android:text="Bet" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/lblBetWarning"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textStyle="italic"
+                android:textColor="@android:color/holo_red_dark" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- In-Game Buttons -->
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:padding="5dp">
+
+        <Button
+            android:id="@+id/btnHit"
+            android:layout_width="125dp"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            android:padding="8dp"
+            android:background="@drawable/button_shape_game"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp"
+            android:text="Hit" />
+
+        <Button
+            android:id="@+id/btnStand"
+            android:layout_width="125dp"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            android:padding="8dp"
+            android:background="@drawable/button_shape_game"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp"
+            android:text="Stand" />
+
+    </LinearLayout>
+
+    <!-- Post-Game Buttons -->
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:padding="15dp">
+
+        <Button
+            android:id="@+id/btnCashOut"
+            android:layout_width="125dp"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            android:padding="8dp"
+            android:background="@drawable/button_shape_cashout"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp"
+            android:text="Cash Out" />
+
+    </LinearLayout>
+</LinearLayout>
